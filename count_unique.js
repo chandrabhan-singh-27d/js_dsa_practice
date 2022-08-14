@@ -23,7 +23,6 @@ Logic:
     [1, 2, 4, 5, 6, 6, 6, 6, 7] -> [1, 2, 4, 5, 6, 6, 6, 6, 7] ->  [1, 2, 4, 5, 6, 7, 6, 6, 7]
 
     At this point the value of i will be 5 as it started from 0 so in return we need actual count so we will add 1 to i and will return the same.
-
  */
 let arr = [1, 2, 2, 3, 4, 4, 4, 4, 5, 5, 8, 9, 9];
 
