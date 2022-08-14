@@ -1,6 +1,7 @@
 //An anagram of a string is another string that contains the same characters, only the order of characters can be different. 
 
-/* We take 2 different strings do following operations: 
+/* 
+We take 2 different strings do following operations: 
 1. Compare the length of the strings, if the length of the strings differs then they are not anagram of each other.
 2. Then we map the letters and check whether the same number of each letter is present in both the strings, if so they are anagram otherwise not.
     e.g. "hello" and "lleoh" are anagram.
@@ -13,6 +14,7 @@ Object logic - As we know that we don't have the push method to add the elements
 - The for...of loop gives the value of those elements while the for...in gives the index number of those stored chars.
 - when we write charObj[chars] it means that the key being each chars of the string.
 - If charObj[chars] is not present in the object assign it a value otherwise increment the value.
+- reference video: https://www.youtube.com/watch?v=YPmgpqhT4QY&ab_channel=Code4Love
 
 
 let string = "hello"
@@ -46,8 +48,9 @@ function checkAnagram(string1, string2) {
     for (let items of string2) {
         if(!charObj[items]){
             return false;
-        } 
-        charObj[items]--
+        } else{
+            charObj[items]--
+        }
     }
     return true;
 }
